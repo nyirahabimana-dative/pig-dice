@@ -51,4 +51,19 @@ function Player(userName) {
     $('#player1-score').text(player1.score);
     $('#player2-score').text(player2.score);
   
+    
+    $('#current_player').text(currentTurn.player.userName);
+  
+    $("form#roll").submit(function(event) {
+        event.preventDefault();
+        
+    var result = currentTurn.diceRoller(player1, player2);
+  
+      
+    $('#roll').text(result);
+  
+    
+    $('#roll-total').text(currentTurn.total);
+    };
+
   });
