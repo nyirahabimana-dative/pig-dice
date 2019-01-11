@@ -19,3 +19,13 @@ h1 {
     color: #FF6699;
     font-size: 5.2em;
    }
+
+   h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  } 
+  .player {
+    color: #d2a679;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+};
