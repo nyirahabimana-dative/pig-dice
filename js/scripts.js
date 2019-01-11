@@ -34,3 +34,10 @@ function Player(userName) {
         $("#player1").toggleClass("active");
     };
   };
+  $(document).ready(function() {
+    var player1 = new Player("Player 1");
+    var player2 = new Player("Player 2");
+    var currentTurn = new Turn(player1);
+  
+    var total = currentTurn.total;
+  });
