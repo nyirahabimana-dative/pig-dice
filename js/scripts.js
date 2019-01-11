@@ -59,11 +59,16 @@ function Player(userName) {
         
     var result = currentTurn.diceRoller(player1, player2);
   
-      
     $('#roll').text(result);
-  
-    
     $('#roll-total').text(currentTurn.total);
-    };
 
-  });
+    if ((currentTurn.total + currentTurn.player.score) >= 60) {
+        if (currentTurn.player == player1) {
+            $('#player1-score').text(currentTurn.total + currentTurn.player.score);
+            alert("You are the winner!");
+        } else (currentTurn.player == player2) {
+            $('#player2-score').text(currentTurn.total + currentTurn.player.score)
+            alert("You are the winner!");
+        };
+      };
+    });
