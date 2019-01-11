@@ -40,10 +40,15 @@ function Player(userName) {
     var currentTurn = new Turn(player1);
   
     var total = currentTurn.total;
-    
+
     $("#player1").hide().show("slow");
     $("#player2").hide().show("slow");
     $("h1").hide().show("slow");
     $("p").hide().show("slow");
+    
+    $("#roll-total").text(total);
+  
+    $('#player1-score').text(player1.score);
+    $('#player2-score').text(player2.score);
   
   });
