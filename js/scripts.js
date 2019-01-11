@@ -72,3 +72,21 @@ function Player(userName) {
         };
       };
     });
+    $("form#end-turn").submit(function(event) {
+        event.preventDefault();
+    
+        currentTurn.endTurn(player1, player2);
+    
+        
+        $('#current_player').text(currentTurn.player.userName);
+    
+        
+        $('#player1-score').text(player1.score);
+        $('#player2-score').text(player2.score);
+    
+        
+        $('#roll').text(currentTurn.randNumber);
+        $('#roll-total').text(currentTurn.total);
+      });
+    });
+    
