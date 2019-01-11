@@ -20,4 +20,17 @@ function Player(userName) {
         return randNumber;
     };
   };
-  
+  Turn.prototype.endTurn = function(player1, player2) {
+    this.player.score += this.total;
+    this.total = 0;
+    this.randNumber = 0;
+    if (this.player == player1) {
+        this.player = player2;
+        $("#player2").toggleClass("active");
+        $("#player1").toggleClass("active");
+    } else if (this.player == player2) {
+        this.player = player1;
+        $("#player2").toggleClass("active");
+        $("#player1").toggleClass("active");
+    };
+  };
