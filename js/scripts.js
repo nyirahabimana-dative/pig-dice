@@ -40,4 +40,10 @@ function Player(userName) {
     var currentTurn = new Turn(player1);
   
     var total = currentTurn.total;
+    
+    $("#player1").hide().show("slow");
+    $("#player2").hide().show("slow");
+    $("h1").hide().show("slow");
+    $("p").hide().show("slow");
+  
   });
