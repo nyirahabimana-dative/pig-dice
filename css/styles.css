@@ -81,3 +81,8 @@ p {
   ul{
     display:none;
   }
+  li{
+    font-family:helvetiva;
+    font-size:1.3em;
+    color:rgb(76, 32, 34);
+  }
