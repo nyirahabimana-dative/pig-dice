@@ -112,4 +112,10 @@ function Player(userName) {
     });
   });
   
+  $(document).ready(function(){
+    $("h4").click(function(){
+      $("ul").show();
+    });
+  });
+  
     

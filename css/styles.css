@@ -9,9 +9,8 @@ h1 {
   }
   
   h1#top {
-    color: #FF9999;
-    color: #FF99BB;
-    color: #FF6699;
+    color:#e58b8d;
+   /*color: #FF6699;*/
     font-size: 7em;
   
   }
@@ -52,36 +51,36 @@ p {
 }
 
 .container {
-  background: #fff;
-  background: rgba(255,255,255, 0.99);
+  background-color: rgba(255,255,255, 0.99);
   border: 10px solid #FF6699;
-  border-radius: 15px;
-  width: 500px;
+  border-radius: 5px;
+
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-top: 25px;
-  padding-bottom: 25px;
   padding-bottom: 50px;
-
 }
 .btn {
-    /*margin-right: 20px;*/
-    /*border-width: 2px !important;*/
-    padding: 10px 25px;
+    margin-right: 20px;
+    border-width: 5px;
+    padding: 20px 25px;
   }
   
   #roll .btn {
       color: #fff;
-      background: #FF6699;
+      background-color: #FF6699;
       border: #FF6699;
-      margin-left: -15px;
+      /*margin-left: -15px;*/
   }
   
   #end-turn .btn {
       color: #fff;
-      background: #FF99BB;
-      background: #FF9999;
+      /*background: #FF99BB;*/
+      background-color: #FF9999;
       border: #FF99BB;
-      margin-left: px;
+      
+  }
+  ul{
+    display:none;
   }
