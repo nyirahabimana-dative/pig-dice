@@ -88,7 +88,7 @@ function Player(userName) {
             alert("You are the winner!");
         } else if (currentTurn.player == player2) {
             $('#player2-score').text(currentTurn.total + currentTurn.player.score)
-            alert("You are the winner!");
+            alert("wow!!;You are the winner!");
         };
       };
     });
